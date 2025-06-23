@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img1.jpg);
+    background-size: cover;
+    font-family: Calibri, sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+    display: flex;
+    height: 20vh;
+    align-content: center;
+    color: #896262;
+    text-shadow: 0 0 5px #b5aaaa;
+}
+
+.drum-kit {
+    display: flex;
+    gap: 20px;
+}
+
+.drum {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background: #585656;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.drum:active,
+.pressed {
+    background: #bd695d;
+    transform: scale(1.0);
+}
